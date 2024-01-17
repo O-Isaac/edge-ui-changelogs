@@ -18,10 +18,15 @@ body {
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 1em;
-    width: 1040px;
-    max-width: 100%;
+	margin-inline: auto;
+	max-width: 1024px;
+
+	transition: all 300ms;
+
+	@media (max-width: 1024px) {
+		max-width: 65ch;
+	}
+
 }
 
 .hero {
