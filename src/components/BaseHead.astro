@@ -1,13 +1,22 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
 import SEO, { type Props as SEOProps } from './SEO.astro';
-import { SiteTitle, SiteDescription } from '../consts';
+import { SiteTitle, SiteDescription, SiteDefaultImage } from '../consts';
 
 export type Props = Partial<SEOProps>;
-const { title = SiteTitle, name = SiteTitle, description = SiteDescription, ...seo } = Astro.props;
+const { 
+		title = SiteTitle, 
+		name = SiteTitle,
+		description = SiteDescription,
+		image = {
+			src: SiteDefaultImage,
+			alt: SiteDescription
+		},
+		...seo 
+	} = Astro.props;
 ---
 
-<SEO {title} {description} {name} {...seo} />
+<SEO {title} {description} {name} {image} {...seo} />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
