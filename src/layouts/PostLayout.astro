@@ -10,6 +10,10 @@ type Props = {
 };
 
 const { release } = Astro.props;
+const bannerStyle = `background: 
+	linear-gradient(to top, rgba(17, 17, 17, 1), rgba(17, 17, 17, .8), rgba(17, 17, 17, .4), transparent), 
+	url(${release.data.banner || ''}) top center/cover;`
+
 ---
 
 <!doctype html>
@@ -22,6 +26,11 @@ const { release } = Astro.props;
 		/>
 	</head>
 	<body>
+		<div 
+			class="hero"
+			style={bannerStyle}
+		/>
+
 		<Header />
 		<main class="container">
 			<div class="post single" transition:persist transition:name="post">
