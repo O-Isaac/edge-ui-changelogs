@@ -6,13 +6,14 @@ import { SiteTitle } from '../consts';
 <header>
 	<nav>
 		<h2 id="site_title">
-			<a href="/">
+			<a class="title_wrapper" href="/">
 				<img width="24px" height="24px" src="https://beta-edge-ui-docs.vercel.app/_astro/logo.vCRi2JDX.webp" alt="Edge UI Logo">
-				{SiteTitle}
+				<span class="separator">/</span>
+				<span class="title">Changelogs</span>
 			</a>
 		</h2>
 		<div class="links">
-			<a href="https://beta-edge-ui-docs.vercel.app/">Blog</a>
+			<a href="https://beta-edge-ui-docs.vercel.app/">Docs</a>
 		</div>
 	</nav>
 </header>
@@ -22,21 +23,29 @@ import { SiteTitle } from '../consts';
 		max-height: 70px;
 	}
 
+	nav #site_title a {
+		gap: 3px;
+	}
+
+	.separator {
+		font-size: 1.3rem;
+		font-weight: lighter;
+	}
+	
+	.title {
+		text-transform: capitalize;
+		font: bolder !important;
+		font-size: 1.3rem;
+	}
+
 	header {
 		isolation: isolate;
-		background: #1111119a;
+		background: hsl(224, 14%, 16%);
+		border-bottom: 1px solid hsl(224, 10%, 10%);
 	}
 
 	nav {
-		padding: 1rem;
-		width: 1024px;
-
-		transition: all 300ms;
-
-		@media (max-width: 1024px) {
-			width: 65ch;
-		}
-		
+		padding: 1rem 2rem;
 		max-width: 100%;
 		margin: 0 auto;
 	}
