@@ -26,7 +26,7 @@ export default config({
             src: fields.image({
                 label: "Image",
                 directory: "src/assets",
-                publicPath: "../assets/"
+                publicPath: "../../assets/"
             }),
             alt: fields.text({ label: "Alt" })
         }),
