@@ -2,5 +2,15 @@
   "extends": "astro/tsconfigs/strict",
   "exclude": [
     "dist"
-  ]
+  ],
+  "compilerOptions": {
+    "baseUrl": "C:/Users/Isaac/dev/@o-isaac/edge-ui-changelogs",
+    "paths": {
+      "@assets/*": [
+        "./src/assets/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
 }

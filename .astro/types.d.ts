@@ -1,5 +1,14 @@
 declare module 'astro:content' {
 	interface Render {
+		'.mdoc': Promise<{
+			Content(props: Record<string, any>): import('astro').MarkdownInstance<{}>['Content'];
+			headings: import('astro').MarkdownHeading[];
+		}>;
+	}
+}
+
+declare module 'astro:content' {
+	interface Render {
 		'.md': Promise<{
 			Content: import('astro').MarkdownInstance<{}>['Content'];
 			headings: import('astro').MarkdownHeading[];
@@ -175,9 +184,9 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"releases": {
-"0_55.md": {
-	id: "0_55.md";
-  slug: "0_55";
+"early-access-alpha-update.md": {
+	id: "early-access-alpha-update.md";
+  slug: "early-access-alpha-update";
   body: string;
   collection: "releases";
   data: InferEntrySchema<"releases">
