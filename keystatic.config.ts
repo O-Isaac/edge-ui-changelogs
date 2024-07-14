@@ -16,7 +16,7 @@ export default config({
         title: fields.slug({ name: { label: 'Title' } }),
         date: fields.date({ label: "Date", defaultValue: { kind: "today" } }),
         versionNumber: fields.text({ label: "Version Number"}),
-        description: fields.text({ label: "Text" }),
+        description: fields.text({ label: "Description" }),
         banner: fields.image({
             label: "Banner",
             directory: "public/banners",
@@ -26,7 +26,7 @@ export default config({
             src: fields.image({
                 label: "Image",
                 directory: "src/assets",
-                publicPath: "@assets"
+                publicPath: "../assets/"
             }),
             alt: fields.text({ label: "Alt" })
         }),
