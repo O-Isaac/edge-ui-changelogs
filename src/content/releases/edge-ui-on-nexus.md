@@ -10,7 +10,7 @@ image:
 ---
 ## Edge UI 0.60 Update
 
-![Edge UI Banner](%5Bhttps://i.ibb.co/QkgKQL5/Untitled-1.png%5D\(https://i.ibb.co/QkgKQL5/Untitled-1.png))
+![Edge UI Banner](https://i.ibb.co/QkgKQL5/Untitled-1.png)
 
 [https://www.nexusmods.com/skyrimspecialedition/mods/130983](https://www.nexusmods.com/skyrimspecialedition/mods/130983)
 
