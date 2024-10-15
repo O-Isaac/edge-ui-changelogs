@@ -10,7 +10,7 @@ image:
 ---
 ## Edge UI 0.60 Update
 
-![](edge-ui-banner.png)
+![Edge UI Banner](%5Bhttps://i.ibb.co/QkgKQL5/Untitled-1.png%5D\(https://i.ibb.co/QkgKQL5/Untitled-1.png))
 
 [https://www.nexusmods.com/skyrimspecialedition/mods/130983](https://www.nexusmods.com/skyrimspecialedition/mods/130983)
 
@@ -40,4 +40,4 @@ image:
 - For the non-addons version, you only need **skyui** installed, for addons: mods that you want to use the addon for + their requirements
 - If you use the addons, **make sure that Edge UI overwrites the mods that are being reskinned especially DBVO and Experience**
 - **Don't forget, 99% of the problems with the UI is due to something overwritting Edge UI, make sure that only mods that you need to take priority over Edge UI are overwriting my mod (Fonts, Aura Tweaks, Startmenu/Loading screen replacers etc)**
-- Have fun, and don't forget to check [https://beta-edge-ui-docs.vercel.app/guides/skyhud](https://beta-edge-ui-docs.vercel.app/guides/skyhud "https://beta-edge-ui-docs.vercel.app/guides/skyhud") and [https://edge-ui-docs.vercel.app/documentation](https://edge-ui-docs.vercel.app/documentation "https://edge-ui-docs.vercel.app/documentation") first, before asking questions
+- Have fun, and don't forget to check [https://beta-edge-ui-docs.vercel.app/guides/skyhud](https://beta-edge-ui-docs.vercel.app/guides/skyhud) and [https://edge-ui-docs.vercel.app/documentation](https://edge-ui-docs.vercel.app/documentation) first, before asking questions
